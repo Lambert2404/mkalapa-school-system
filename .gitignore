@@ -1,0 +1,22 @@
+# --- Backend (Python/Django) ---
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+.env
+venv/
+env/
+staticfiles/
+media/
+
+# --- Frontend (Node/Vite) ---
+node_modules/
+dist/
+.env
+.env.local
+*.log
+
+# --- Editors/OS ---
+.vscode/
+.idea/
+.DS_Store

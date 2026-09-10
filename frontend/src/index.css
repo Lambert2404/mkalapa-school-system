@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  ::selection {
+    background-color: #D6A419;
+    color: #16332A;
+  }
+}
+
+@layer components {
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs font-semibold;
+  }
+  .badge-completed {
+    @apply badge bg-forest-50 text-forest-700;
+  }
+  .badge-debt {
+    @apply badge bg-brick-50 text-brick-600;
+  }
+  .badge-pending {
+    @apply badge bg-maize-50 text-maize-600;
+  }
+  .badge-sent {
+    @apply badge bg-forest-50 text-forest-700;
+  }
+  .badge-failed {
+    @apply badge bg-brick-50 text-brick-600;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-forest-700 px-4 py-2.5
+           text-sm font-semibold text-white transition-colors hover:bg-forest-600
+           disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-surface px-4 py-2.5
+           text-sm font-semibold text-ink transition-colors hover:bg-canvas
+           disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brick-500 px-4 py-2.5
+           text-sm font-semibold text-white transition-colors hover:bg-brick-600;
+  }
+  .card {
+    @apply rounded-xl border border-border bg-surface shadow-card;
+  }
+  .input {
+    @apply w-full rounded-lg border border-border bg-surface px-3 py-2.5 text-sm text-ink
+           placeholder:text-muted focus:border-forest-500 focus:outline-none focus:ring-1 focus:ring-forest-500;
+  }
+  .label {
+    @apply mb-1.5 block text-sm font-medium text-ink;
+  }
+}
