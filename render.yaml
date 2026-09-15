@@ -22,7 +22,7 @@ services:
         value: "mock"
       - key: SMS_TEST_MODE
         value: "True"
-    healthCheckPath: /api/
+    healthCheckPath: /health/
 
 databases:
   - name: mkalapa-db
