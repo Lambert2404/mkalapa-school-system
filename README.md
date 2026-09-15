@@ -213,7 +213,7 @@ Set in `backend/.env`:
 SMS_PROVIDER=nextsms
 SMS_AUTH_METHOD=bearer
 SMS_ACCESS_TOKEN=your-real-token
-SMS_SENDER_ID=MKALAPA
+SMS_SENDER_ID=MKALAPA SEC
 SMS_TEST_MODE=True   # switch to False when ready to send real SMS
 ```
 
@@ -256,14 +256,14 @@ Set `DJANGO_DEBUG=False`, a real `DJANGO_SECRET_KEY`, `DJANGO_ALLOWED_HOSTS`, `D
 
 ## Business Rules Reference
 
-1. Default monthly requirements: Mahindi 10 KG, Mboga 5 KG, Cash TSh 15,000 (configurable in Settings, applies to future records only)
+1. Default monthly requirements: Mahindi 10 Kg, Mboga 5 Kg, Cash TSh 15,000 (configurable in Settings, applies to future records only)
 2. All contributions are entered manually by staff
 3. No online payment of any kind
 4. No authentication of any kind
 5. Debt is never negative — `MAX(0, required − submitted)`
 6. Mahindi and Mboga are always in KG
 7. Cash is always in TSh
-8. KG and TSh are never combined into one "total debt" number
+8. Kg and TSh are never combined into one "total debt" number
 9. SMS messages only mention items that actually have outstanding debt
 10. Zero outstanding contribution = COMPLETED status
 11. Changing Settings requirements does not retroactively change historical records

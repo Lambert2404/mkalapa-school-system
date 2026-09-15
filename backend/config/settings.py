@@ -152,7 +152,7 @@ CORS_ALLOW_CREDENTIALS = True
 #   Single SMS (test):   POST /api/sms/v2/test/text/single  (no charge, dummy response)
 #   Content-Type / Accept headers must both be application/json.
 # ---------------------------------------------------------------------------
-SMS_PROVIDER = os.environ.get("SMS_PROVIDER", "mock")  # "mock" or "nextsms"
+SMS_PROVIDER = os.environ.get("SMS_PROVIDER", "nextsms")  # "mock" or "nextsms"
 
 # Preferred: Bearer token auth (SMS_AUTH_METHOD=bearer, the NextSMS-recommended method)
 SMS_AUTH_METHOD = os.environ.get("SMS_AUTH_METHOD", "bearer")  # "bearer" or "basic"
@@ -162,7 +162,7 @@ SMS_ACCESS_TOKEN = os.environ.get("SMS_ACCESS_TOKEN", "")
 SMS_API_KEY = os.environ.get("SMS_API_KEY", "")
 SMS_API_SECRET = os.environ.get("SMS_API_SECRET", "")
 
-SMS_SENDER_ID = os.environ.get("SMS_SENDER_ID", "MKALAPA")
+SMS_SENDER_ID = os.environ.get("SMS_SENDER_ID", "MKALAPA SEC")
 
 # Toggle NextSMS's free Test Mode endpoint (dummy responses, no credits used,
 # no real SMS delivered) vs. the live endpoint.

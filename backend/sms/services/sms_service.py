@@ -29,8 +29,8 @@ def get_provider():
 def _format_kg(value) -> str:
     value = float(value)
     if value == int(value):
-        return f"{int(value)} KG"
-    return f"{value} KG"
+        return f"{int(value)} Kg"
+    return f"{value} Kg"
 
 
 def _format_tsh(value) -> str:
@@ -73,7 +73,7 @@ def generate_completion_sms(contribution, school_name="MKALAPA SECONDARY SCHOOL"
     month_year = f"{contribution.month} {contribution.year}"
     return (
         f"{school_name}: Mzazi/Mlezi wa {student.full_name.upper()}, tunakujulisha kuwa "
-        f"mwanafunzi wako amekamilisha mchango wa mwezi {month_year}. Asante."
+        f"mwanao amekamilisha mchango wa mwezi {month_year}. Asante kwa ushirikiano."
     )
 
 
